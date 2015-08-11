@@ -1,0 +1,21 @@
+.centralEvent { position: relative; float: left; width: 964px; height: 465px; margin: 0; background: url(bg_cv.jpg) no-repeat; }
+.centralEvent .bt-cata { position: absolute; right: 7px; top: 0; width: 150px; height: 249px; margin-left: 10px; text-align: center; text-decoration: none; background: url(bgDuCat.png) no-repeat 0 0; }
+.centralEvent .bt-cata label, .centralEvent .bt-cata input { display: inline-block; }
+.centralEvent .bt-cata label { font: bold 16px Arial, Helvetica, sans-serif; text-transform: uppercase; color: #5B594F; }
+.centralEvent .bt-cata input { padding: 5px 15px; margin-top: 3px; color: #390907; background-color: #C3B191; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; border: none; font: bold 14px Arial; cursor: pointer; }
+.centralEvent a.bt-cata img { border: none; -webkit-transition: all 0.5s ease-in-out; -webkit-transition-delay: 0s; -moz-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; }
+.centralEvent a.bt-cata:hover img { -webkit-transform: rotate(8deg); -moz-transform: rotate(8deg); -ms-transform: rotate(8deg); -o-transform: rotate(8deg); transform: rotate(8deg); }
+
+.elmnt-center { width: 40%; margin-top: 30px; margin-left: 380px; text-align: center; }
+
+.h2-like, .h1-like, .btn { display: inline-block; }
+
+.h1-like { font: italic bold 24px Arial, Helvetica, sans-serif; color: #59594D; text-shadow: 0 0 3px white, 0 0 6px white, 0 0 9px white; }
+.h1-like span { font-size: 36px; }
+
+.h2-like { margin-top: 30px; font: italic bold 24px Georgia, Times, "Times New Roman", serif; color: #06BBBE; text-align: center; text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white; }
+
+.btn { margin-top: 20px; padding: 6px 16px; border: 2px solid #FFFFFF; font: italic bold 21px Arial, Helvetica, sans-serif; color: #fff; text-align: center; text-decoration: none; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; border-radius: 8px; }
+
+.btn-gradient { background: #2F76F6; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3079fc), color-stop(100%, #2254b0)); background-image: -webkit-linear-gradient(#3079fc, #2254b0); background-image: -moz-linear-gradient(#3079fc, #2254b0); background-image: -o-linear-gradient(#3079fc, #2254b0); background-image: linear-gradient(#3079fc, #2254b0); }
+.btn-gradient:hover { background: #245ABD; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2254b0), color-stop(100%, #3079fc)); background-image: -webkit-linear-gradient(#2254b0, #3079fc); background-image: -moz-linear-gradient(#2254b0, #3079fc); background-image: -o-linear-gradient(#2254b0, #3079fc); background-image: linear-gradient(#2254b0, #3079fc); }

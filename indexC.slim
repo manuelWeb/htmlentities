@@ -1,0 +1,34 @@
+- var_date = "0815";
+- var_link_rayon = "http://www.confortetvie.fr/fr/confort-bien-etre/sante-bien-etre.html"
+
+- var_gaq_rayon  = "'EncartHP', 'confort-bien-etre_sante-bien-etre_btnRayon-"+var_date+"', "
+- var_gaq_cat    = "'EncartHP_Ecata', 'EncartHP_Ecata-"+var_date+"', "
+
+- var_cat_link   = "http://www.confortetvie.fr/cat/fr/ECatalog.htm?urlLangue=fr"
+
+- var_start_gaq  = "ga('local.send', 'event', "
+- var_end_gaq    = "document.location.pathname);"
+
+doctype strict
+html
+  head
+    meta[http-equiv="Content-Type" content="text/html; charset=utf-8"]
+    link[href="index.css" media="screen" rel="stylesheet" type="text/css"]
+    title cv_template
+
+  body
+    .centralEvent
+      .elmnt-center
+        span.h1-like
+          | Tout pour votre 
+          span bien-être & !
+        span.h2-like
+          | Découvrez tous nos produits !
+          / br
+          / | votre salle de bain
+        a.btn.btn-gradient href=var_link_rayon onclick==var_start_gaq+var_gaq_rayon+var_end_gaq
+          | Je découvre
+      a.bt-cata href=var_cat_link target="_blank" onclick==var_start_gaq+var_gaq_cat+var_end_gaq
+        img src="cat.png" alt=""
+        label.bt_cat je feuillette <br />mon <br />catalogue !
+        input#bt_cat type="button" value="Cliquez ici"

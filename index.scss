@@ -1,0 +1,74 @@
+@import "compass/css3";
+@import "compass/support";
+$debug-browser-support: true;
+$font-stack-arial: Arial, Helvetica, sans-serif;
+$font-stack-serif: Georgia, Times, "Times New Roman", serif;
+$cv-color: #922625; $h1likesize: 24px; $h2likesize: 24px;
+
+.centralEvent{
+  position: relative; float: left;
+  width: 964px;
+  height:465px;
+  margin:0;
+  background: url(bg_cv.jpg) no-repeat;
+  .bt-cata{
+    position:absolute; right:7px; top:0;
+    width:150px; height:249px; margin-left:10px;
+    text-align:center; text-decoration:none;
+    background:url(bgDuCat.png) no-repeat 0 0;
+    label,input{
+      display:inline-block;
+    }
+    label{
+      font:bold 16px $font-stack-arial; text-transform:uppercase; color:#5B594F;
+    }
+    input{
+      padding:5px 15px; margin-top:3px;
+      color:#390907;
+      background-color:#C3B191;
+      @include border-radius(10px); border:none;
+      font:bold 14px Arial;
+      cursor:pointer;
+    }
+  }
+  a.bt-cata img{
+    border:none;
+    @include transition(all 0.5s ease-in-out 0s);
+  }
+  a.bt-cata:hover img{
+    @include transform(rotate(8deg));
+  }
+}
+.elmnt-center{
+  width: 40%; margin-top: 30px; margin-left: 380px;
+  text-align: center; // outline: solid;
+}
+.h2-like,.h1-like,.btn{display: inline-block;}
+.h1-like {
+  font: italic bold $h2likesize $font-stack-arial; color: #59594D;
+  @include text-shadow(0 0 3px #fff,0 0 6px #fff,0 0 9px #fff);
+  span{
+    font-size: $h2likesize+12;
+  }
+}
+.h2-like {
+  margin-top: 30px;
+  font: italic bold $h1likesize $font-stack-serif; color: #06BBBE; 
+  text-align: center; 
+  @include text-shadow(2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff);
+}
+.btn{
+  margin-top: 20px;
+  padding: 6px 16px; 
+  border: 2px solid #FFFFFF;
+  font: italic bold 21px $font-stack-arial; color: #fff; 
+  text-align:center; text-decoration:none;
+  @include border-radius(8px);
+}
+.btn-gradient{
+  background: #2F76F6;
+  @include background-image(linear-gradient(#3079FC, #2254B0));
+  &:hover{
+    background: #245ABD;
+    @include background-image(linear-gradient(#2254B0, #3079FC));}
+}
